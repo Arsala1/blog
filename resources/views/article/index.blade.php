@@ -19,9 +19,11 @@
 	- Action = 
 		<a href="{{url('article/show/'.$row->id)}}">Detail</a> |
 		<a href="{{url('article/edit/'.$row->id)}}">Edit</a> |
-		<a href="{{url('article/delete/'.$row->id)}}">Delete</a>
+		<a href="{{url('article/hapus/'.$row->id)}}">Delete</a> <br><br>
 
 	@endforeach
+
+	{{$article->links()}}
 
 </body>
 </html>
